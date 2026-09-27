@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>სოულ შაურმა — მხარდაჭერა</title>
+<style>
+:root{--bg:#0b0b0d;--card:#151519;--muted:#a9a9b1;--accent:#ffb21a;--accent2:#ff6b00;--white:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Sans Georgian",sans-serif;background:var(--bg);color:var(--white)}
+header{position:sticky;top:0;z-index:10;background:rgba(11,11,13,.88);backdrop-filter:blur(14px);border-bottom:1px solid #25252b}
+.nav{max-width:1100px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:21px}.logo span{color:var(--accent)}
+.nav a{color:#ddd;text-decoration:none;margin-left:22px;font-size:14px}
+.hero{max-width:1100px;margin:auto;padding:70px 22px 45px;display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:center}
+.badge{display:inline-block;background:#2a210f;color:#ffc34d;border:1px solid #5b4315;border-radius:99px;padding:8px 13px;font-size:13px}
+h1{font-size:clamp(44px,7vw,78px);line-height:.95;margin:20px 0 18px;letter-spacing:-3px}
+.hero p{color:var(--muted);font-size:18px;line-height:1.6;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.btn{padding:14px 20px;border-radius:12px;text-decoration:none;font-weight:800;display:inline-block}
+.primary{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#17120a}
+.secondary{border:1px solid #38383f;color:#fff;background:#17171b}
+.visual{height:390px;border-radius:28px;background:radial-gradient(circle at 50% 35%,#f5a900 0,#7b3500 28%,#17171a 62%);display:flex;align-items:center;justify-content:center;box-shadow:0 25px 80px #000}
+.visual .emoji{font-size:145px;filter:drop-shadow(0 20px 18px #0008)}
+.stats{max-width:1100px;margin:10px auto 55px;padding:0 22px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.stat{background:var(--card);border:1px solid #25252b;border-radius:17px;padding:22px}.stat b{font-size:25px}.stat span{display:block;color:var(--muted);margin-top:7px;font-size:13px}
+section{max-width:1100px;margin:auto;padding:45px 22px}.section-title{font-size:34px;margin:0 0 22px}.sub{color:var(--muted)}
+.menu{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.item{background:var(--card);border:1px solid #25252b;border-radius:18px;padding:21px}.item h3{margin:0 0 8px}.price{color:var(--accent);font-weight:900}.item p{color:var(--muted);line-height:1.5;font-size:14px}
+.support{background:linear-gradient(135deg,#1d1709,#17171a);border:1px solid #4d3913;border-radius:25px;padding:38px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.rating{font-size:48px;font-weight:900}.stars{color:var(--accent);letter-spacing:2px}.review{background:var(--card);padding:20px;border-radius:17px;border:1px solid #25252b;margin-top:12px}.review p{color:#ddd;line-height:1.5}.review small{color:var(--muted)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:15px}.contact div{background:var(--card);border:1px solid #25252b;border-radius:18px;padding:22px}.contact strong{display:block;margin-bottom:7px}.contact span{color:var(--muted)}
+footer{text-align:center;color:#777;padding:45px 20px;border-top:1px solid #222}
+@media(max-width:750px){.hero{grid-template-columns:1fr;padding-top:45px}.visual{height:270px}.stats{grid-template-columns:1fr 1fr}.menu,.contact{grid-template-columns:1fr}.support{display:block}.support .btn{margin-top:20px}.nav a{display:none}}
+</style>
+</head>
+<body>
+<header><div class="nav">
+<div class="logo">SOUL <span>შაურმა</span></div>
+<nav><a href="#about">ჩვენ შესახებ</a><a href="#menu">მენიუ</a><a href="#reviews">მიმოხილვები</a><a href="#contact">კონტაქტი</a></nav>
+</div></header>
+
+<main>
+<section class="hero" id="about">
+<div>
+<span class="badge">★ 4.8 / 5 · 282 შეფასება</span>
+<h1>სოულ შაურმა.</h1>
+<p>ადგილი, სადაც კარგი შაურმა მარტივ იდეად იქცევა — გემრიელი, სწრაფი და გულით მომზადებული.</p>
+<div class="actions">
+<a class="btn primary" href="#support">♡ მხარი დაუჭირე</a>
+<a class="btn secondary" href="#menu">მენიუს ნახვა</a>
+</div>
+</div>
+<div class="visual"><div class="emoji">🌯</div></div>
+</section>
+
+<div class="stats">
+<div class="stat"><b>4.8 ★</b><span>საერთო რეიტინგი</span></div>
+<div class="stat"><b>282</b><span>მიმოხილვა</span></div>
+<div class="stat"><b>10–20 ₾</b><span>ერთ ადამიანზე</span></div>
+<div class="stat"><b>23:50</b><span>დახურვის დრო</span></div>
+</div>
+
+<section id="menu">
+<h2 class="section-title">მენიუ</h2><p class="sub">სოულ შაურმის პოპულარული არჩევანი</p>
+<div class="menu">
+<div class="item"><h3>კლასიკური შაურმა</h3><p>ახლად მომზადებული შაურმა და სოულის საფირმო გემო.</p><span class="price">10–20 ₾</span></div>
+<div class="item"><h3>საფირმო შაურმა</h3><p>უფრო განსაკუთრებული კომბინაცია მათთვის, ვისაც განსხვავებული გემო უყვარს.</p><span class="price">10–20 ₾</span></div>
+<div class="item"><h3>სოულის არჩევანი</h3><p>შენი საღამოსთვის სწრაფი და გემრიელი არჩევანი.</p><span class="price">10–20 ₾</span></div>
+</div>
+</section>
+
+<section id="support">
+<div class="support">
+<div><h2 class="section-title">მხარი დაუჭირე სოულ შაურმას</h2><p class="sub">თუ მოგწონს სოულ შაურმა, გაუზიარე სხვებსაც შენი მხარდაჭერა.</p></div>
+<a class="btn primary" href="tel:+995557717138">დარეკვა · 557 71 71 38</a>
+</div>
+</section>
+
+<section id="reviews">
+<h2 class="section-title">მიმოხილვები</h2>
+<div class="rating">4.8 <span class="stars">★★★★★</span></div>
+<p class="sub">282 შეფასება</p>
+<div class="review"><p>„გემრიელი შაურმა და კარგი ადგილი სწრაფი სადილისთვის.“</p><small>მომხმარებლის შეფასება</small></div>
+<div class="review"><p>„კარგი არჩევანია, როცა გინდა სწრაფად და გემრიელად ჭამა.“</p><small>მომხმარებლის შეფასება</small></div>
+</section>
+
+<section id="contact">
+<h2 class="section-title">ინფორმაცია</h2>
+<div class="contact">
+<div><strong>📍 მისამართი</strong><span>41 ხიზანიშვილის ქუჩა, თბილისი 0167</span></div>
+<div><strong>🕐 სამუშაო საათები</strong><span>ღიაა · დახურვა 23:50</span></div>
+<div><strong>💳 საშუალო ფასი</strong><span>10–20 ₾ ერთ ადამიანზე</span></div>
+<div><strong>📞 ტელეფონი</strong><span>557 71 71 38</span></div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Soul Shawarma · მხარდაჭერის გვერდი</footer>
+</body>
+</html>
